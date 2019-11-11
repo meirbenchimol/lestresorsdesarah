@@ -89,7 +89,7 @@
 /* ----------------------------  css for articles ----------------------------------*/
 
 
-.articles{
+.articles-section{
     display: flex;
 }
 
@@ -160,6 +160,18 @@
 .button-2:hover{
     background-color: #accfccb0;
     color: #919595;
+}
+
+@media screen and (max-width: 750px){
+    .articles-section{
+        flex-direction: column;
+    }
+    .article{
+        width: 100%;
+    }
+    .article-right .overlay{
+        float: left;
+    }
 }
 
 /*@media screen and (max-width: 750px){*/
@@ -255,8 +267,55 @@ input[type="text"] ,[type="email"]{
     }
 }
 
-/*------------- css for unmane -------------------------------*/
-.unname{
-    height: 100px;
+/*------------- css for astuce -------------------------------*/
+.astuces-section{
+    height: auto;
     background-color: #571b3c;
+    padding: 20px 0;
+}
+.astuces-section h1{
+    text-align: center;
+    color: #d4cdbc;
+    font-size: 35px;
+    margin: 20px 0 0;
+}
+.astuces{
+    text-align: center;
+    padding: 10px;
+    margin: 20px 50px;
+
+}
+
+.container-astuces{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.astuces h2{
+    text-align: center;
+    color: #d4cdbc;
+
+
+}
+.img-atuces{
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    border: 3px solid #d4cdbc;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 750px){
+    .container-astuces{
+        flex-direction: column;
+    }
+
+    .astuces{
+        margin-top: 20px;
+    }
+    .astuces:hover{
+        background-color:#80808038;
+    }
 }
